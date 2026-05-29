@@ -22,7 +22,7 @@ spec:
       annotations:
         argocd.argoproj.io/sync-wave: "100"
     spec:
-      project: cp4i-operators
+      project: default
       source:
         path: 'components/{{name}}/operator'
       destination:
