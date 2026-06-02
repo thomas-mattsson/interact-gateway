@@ -1,0 +1,12 @@
+apiVersion: nano.datapower.ibm.com/v1alpha1
+kind: TlsServerProfile
+metadata:
+  name: openshift-ingress-tls-profile
+spec:
+  versions:
+    - TLSv1.2
+    - TLSv1.3
+  cipherSuites:
+    - ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+    - ECDHE_RSA_WITH_AES_256_GCM_SHA384
+  secret: default-cert-copy 
