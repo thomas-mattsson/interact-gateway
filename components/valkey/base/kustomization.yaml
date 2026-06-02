@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
 
   - valkey-certificates.yaml
+  - valkey-standalone.yaml
