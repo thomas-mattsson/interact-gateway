@@ -27,7 +27,5 @@ rules:
       - external-secrets.io
       - generators.external-secrets.io
       - operator.external-secrets.io
-      - networkpolicies.projectcalico.org
-      - stagednetworkpolicies.projectcalico.org
     resources:
       - '*'
