@@ -1,0 +1,7 @@
+apiVersion: argoproj.io/v1beta1
+kind: NamespaceManagement
+metadata:
+  name: apic
+  namespace: argocd
+spec:
+  managedBy: argocd

@@ -6,6 +6,7 @@ resources:
   #- apic-argo-role.yaml
   #- apic-argo-rb.yaml
 
+  - namespacemgmt.yaml
   - common.yaml
 
   - operators/all-operators.yaml
