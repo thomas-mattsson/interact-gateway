@@ -132,7 +132,13 @@ The TLS secret `mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000`
 - ❌ Custom domains (e.g. `myapp.mycompany.com`) — those require a separate cert (cert-manager, Let's Encrypt, etc.)
 - ❌ Other clusters — each cluster has its own subdomain and certificate
 
-**Recommendation:** Consider using a Kubernetes secret replicator (e.g., [Reflector](https://github.com/emberstack/kubernetes-reflector)) to automatically sync the secret across namespaces.
+**Alternative Solutions:**
+
+1. **IBM Secrets Manager Integration** (Recommended)
+   Store the certificate in IBM Secrets Manager and use the [Secrets Manager Operator](https://cloud.ibm.com/docs/containers?topic=containers-secrets) to automatically sync it to namespaces. This provides centralized management and automatic rotation.
+
+2. **Kubernetes Secret Replicator**
+   Use [Reflector](https://github.com/emberstack/kubernetes-reflector) or similar tools to automatically replicate the secret from `default` to other namespaces.
 
 ---
 
@@ -141,4 +147,5 @@ The TLS secret `mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000`
 - Argo Helm chart: https://github.com/argoproj/argo-helm/tree/main/charts/argo-cd
 - ArgoCD docs: https://argo-cd.readthedocs.io/
 - IKS Ingress docs: https://cloud.ibm.com/docs/containers?topic=containers-managed-ingress-about
+- IKS Secrets Manager: https://cloud.ibm.com/docs/containers?topic=containers-secrets
 - Chart values: `helm show values argo/argo-cd`
