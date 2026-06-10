@@ -5,7 +5,7 @@ kind: ServiceAccount
 automountServiceAccountToken: true
 metadata:
   name: valkey-operator
-  namespace: apic
+  namespace: nanogw
   labels:
     app.kubernetes.io/name : valkey-operator
     helm.sh/chart : valkey-operator-1.0.0
@@ -146,7 +146,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: valkey-operator
-  namespace: apic
+  namespace: nanogw
 roleRef:
   kind: ClusterRole
   name: valkey-operator
@@ -157,7 +157,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: valkey-operator
-  namespace: apic
+  namespace: nanogw
   labels:
     app.kubernetes.io/name: valkey-operator
     helm.sh/chart: valkey-operator-1.0.0
