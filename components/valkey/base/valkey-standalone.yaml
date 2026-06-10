@@ -12,6 +12,8 @@ metadata:
   annotations:    
 spec:
   kubernetesConfig:
+    podSecurityContext:
+      fsGroup: 1000
     image: "cp.icr.io/cp/datapower/valkey:8.1.4@sha256:228954da8acaa22736279c477c4e5780284e306431eb2bf7bbb61710cfc5ec47"
     imagePullPolicy: "Always"
     imagePullSecrets: 
