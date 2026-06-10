@@ -159,13 +159,13 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: datapower-nano-operator
-    namespace: apic
+    namespace: nanogw
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: datapower-nano-operator
-  namespace: apic
+  namespace: nanogw
 spec:
   replicas: 1
   selector:
