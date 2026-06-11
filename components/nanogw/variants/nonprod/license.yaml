@@ -1,0 +1,9 @@
+apiVersion: nanogateway.apiconnect.ibm.com/v1beta1
+kind: NanoGatewayCluster
+metadata:
+  name: ngw
+spec:
+  license:
+    accept: true
+    use: nonproduction
+    license: 'L-AMGN-4YQ9TJ'

@@ -5,10 +5,7 @@ metadata:
 spec:
   profile: n1xc2.m4
   version: 12.1.0.3
-  license:
-    accept: true
-    use: nonproduction
-    license: 'L-AMGN-4YQ9TJ'
+  license: {}
   imagePullSecrets:
   - ibm-entitlement-key
   imageRegistry: cp.icr.io/cp/apic
