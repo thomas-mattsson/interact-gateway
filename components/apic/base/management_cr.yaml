@@ -48,38 +48,33 @@ spec:
   cloudManagerEndpoint:
     #ingressClassName: $INGRESS_CLASS
     annotations:
-      cert-manager.io/issuer: ingress-issuer
     hosts:
     - name: admin.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud
-      secretName: cm-endpoint
+      secretName: default-ingress-cert
   apiManagerEndpoint:
     #ingressClassName: $INGRESS_CLASS
     annotations:
-      cert-manager.io/issuer: ingress-issuer
     hosts:
     - name: manager.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud
-      secretName: apim-endpoint
+      secretName: default-ingress-cert
   consumerCatalogEndpoint:
     #ingressClassName: $INGRESS_CLASS
     annotations:
-      cert-manager.io/issuer: ingress-issuer
     hosts:
     - name: consumer-catalog.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud
-      secretName: consumer-catalog-endpoint
+      secretName: default-ingress-cert
   platformAPIEndpoint:
     #ingressClassName: $INGRESS_CLASS
     annotations:
-      cert-manager.io/issuer: ingress-issuer
     hosts:
     - name: api.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud
-      secretName: api-endpoint
+      secretName: default-ingress-cert
   consumerAPIEndpoint:
     #ingressClassName: $INGRESS_CLASS
     annotations:
-      cert-manager.io/issuer: ingress-issuer
     hosts:
     - name: consumer.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud
-      secretName: consumer-endpoint
+      secretName: default-ingress-cert
   databaseVolumeClaimTemplate:
     storageClassName: ibmc-vpc-block-10iops-tier
   microServiceSecurity: certManager
