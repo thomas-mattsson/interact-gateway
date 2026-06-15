@@ -9,7 +9,7 @@ spec:
   imagePullSecrets:
   - ibm-entitlement-key-nano
   imageRegistry: cp.icr.io/cp/apic
-  mtlsValidateClient: false
+  #mtlsValidateClient: false
   jwksUrl: https://api.mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000.eu-de.containers.appdomain.cloud/api/cloud/oauth2/certs
   certManagerIssuer:
     kind: Issuer
