@@ -12,9 +12,9 @@ spec:
         - name: nanogw
           namespace: nanogw
           sync-wave: "300"
-        - name: apic
-          namespace: nanogw
-          sync-wave: "300"
+        # - name: apic
+        #   namespace: nanogw
+        #   sync-wave: "300"
   template:
     metadata:
       name: '{{name}}'
