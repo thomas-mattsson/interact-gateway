@@ -33,7 +33,7 @@ The Ingress controller requires the TLS secret to exist in the same namespace as
 **Note:** This cluster's certificate has no CRN (status: `no_default_instance`), so `ibmcloud ks ingress secret create` cannot be used. The secret must be manually copied:
 
 ```bash
-kubectl get secret mycluster-eu-de-1-bxf-8x3-e7d3d93b8b317d269525bf063b24f98d-0000 \
+kubectl get secret idig-prep-cluster-e7d3d93b8b317d269525bf063b24f98d-0000 \
   -n default -o yaml | \
   sed 's/namespace: default/namespace: argocd/' | \
   kubectl apply -f -

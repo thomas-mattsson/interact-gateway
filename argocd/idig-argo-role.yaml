@@ -26,6 +26,11 @@ rules:
     apiGroups: [gateway.networking.k8s.io]
     resources: ['*']
 
+  # Envoy Gateway
+  - verbs: ['*']
+    apiGroups: [gateway.envoyproxy.io]
+    resources: ['*']
+
   # IBM / APIC operands
   - verbs: ['*']
     apiGroups:
