@@ -31,7 +31,7 @@ spec:
     cert: "tls.crt"
     key: "tls.key"
     secret:
-      secretName: "valkey-tls"
+      secretName: "valkey-tls-secret"
   storage:
     volumeClaimTemplate:
       spec:
