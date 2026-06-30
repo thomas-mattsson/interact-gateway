@@ -9,9 +9,9 @@ spec:
         - name: valkey
           namespace: idig
           sync-wave: "300"
-        # - name: idig
-        #   namespace: idig
-        #   sync-wave: "300"
+        - name: idig
+          namespace: idig
+          sync-wave: "300"
   template:
     metadata:
       name: '{{name}}'
