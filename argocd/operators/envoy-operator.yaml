@@ -12,10 +12,17 @@ spec:
   destination:
     namespace: envoy-gateway-system
     server: https://kubernetes.default.svc
+  ignoreDifferences:
+  - kind: ConfigMap
+    name: envoy-gateway-config
+    namespace: envoy-gateway-system
+    jsonPointers:
+    - /data
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
     - ServerSideApply=true
+    - RespectIgnoreDifferences=true
     automated:
       prune: true
       selfHeal: true
