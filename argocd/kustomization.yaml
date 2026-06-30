@@ -13,6 +13,7 @@ resources:
   - operators/apic-operator.yaml
   - operators/valkey-operator.yaml
   - operators/envoy-operator.yaml
+  - operators/envoy-gateway-config.yaml
   - operators/idig-operator.yaml
 
   - operands/all-operands.yaml
