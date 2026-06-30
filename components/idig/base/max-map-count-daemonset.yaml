@@ -20,7 +20,7 @@ spec:
         - operator: Exists
       containers:
         - name: max-map-count-setter
-          image: mcr.microsoft.com/oss/busybox/busybox:1.36
+          image: docker.io/library/busybox:1.36.1
           securityContext:
             privileged: true
           command:
