@@ -7,7 +7,7 @@ spec:
   secretTemplate:
     annotations:
       cert-utils-operator.redhat-cop.io/generate-cert-info: "true"
-  secretName: valkey-tls-secret
+  secretName: valkey-tls
   duration: 8760h  # 365 days
   renewBefore: 720h  # 30 days
   commonName: valkey.idig.svc.cluster.local
