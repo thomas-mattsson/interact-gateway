@@ -4,7 +4,6 @@ kind: Component
 resources:
 - analytics-cluster-patch.yaml
 - devportal-cluster-patch.yaml
-- nanogw-ingress-patch.yaml
 
 patches:
 - path: idig-cluster-patch.yaml

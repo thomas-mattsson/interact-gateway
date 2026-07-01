@@ -6,4 +6,4 @@ metadata:
 spec:
   nanoGateway:
     mgmtEndpoint:
-      ingressClassName: webapprouting.kubernetes.azure.com
+      gatewayClassName: envoy

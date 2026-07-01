@@ -59,4 +59,4 @@ spec:
   nanoGateway:
     gatewayDomain: nanogw.itzaks-nurmlarj.az.techzone.ibm.com
     mgmtEndpoint:
-      ingressClassName: PATCHED_BY_KUSTOMIZE
+      gatewayClassName: PATCHED_BY_KUSTOMIZE
