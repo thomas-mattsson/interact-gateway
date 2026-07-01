@@ -16,7 +16,7 @@ spec:
     license: "L-PAZT-LQ5TZL"
 
   enableAnalytics: true  # Set to true to enable Analytics
-  enableDevPortal: false  # Set to true to enable DevPortal
+  enableDevPortal: true  # Set to true to enable DevPortal
 
   # The base domain for all endpoints in the platform
   domain: itzaks-nurmlarj.az.techzone.ibm.com
