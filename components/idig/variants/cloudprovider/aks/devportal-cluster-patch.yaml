@@ -1,0 +1,12 @@
+apiVersion: devportal.apiconnect.ibm.com/v1beta1
+kind: DevPortalCluster
+metadata:
+  name: idig-devportal
+  namespace: idig
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
+spec:
+  devportalAdminEndpoint:
+    ingressClassName: webapprouting.kubernetes.azure.com
+  devportalUIEndpoint:
+    ingressClassName: webapprouting.kubernetes.azure.com
