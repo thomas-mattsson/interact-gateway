@@ -1,0 +1,9 @@
+apiVersion: datapowerinteractgateway.ibm.com/v1beta1
+kind: DatapowerInteractGatewayCluster
+metadata:
+  name: idig
+  namespace: idig
+spec:
+  nanoGateway:
+    mgmtEndpoint:
+      ingressClassName: webapprouting.kubernetes.azure.com

@@ -1,0 +1,9 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: idig-nanogw-nanogw
+  namespace: idig
+  annotations:
+    argocd.argoproj.io/sync-options: ServerSideApply=true
+spec:
+  ingressClassName: webapprouting.kubernetes.azure.com
