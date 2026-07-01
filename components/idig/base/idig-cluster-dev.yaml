@@ -15,7 +15,7 @@ spec:
     use: nonproduction  # Change to "production" for production deployments
     license: "L-PAZT-LQ5TZL"
 
-  enableAnalytics: true  # Set to true to enable Analytics
+  enableAnalytics: false  # Set to true to enable Analytics
   enableDevPortal: false  # Set to true to enable DevPortal
 
   # The base domain for all endpoints in the platform
