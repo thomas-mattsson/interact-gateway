@@ -15,7 +15,7 @@ resources:
   - operators/envoy-operator.yaml
   - operators/idig-operator.yaml
 
-  - operands/all-operands.yaml
+  #- operands/all-operands.yaml
  
 
 patches:
