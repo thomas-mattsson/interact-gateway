@@ -9,11 +9,11 @@ resources:
   - operators/cert-manager-operator.yaml
   - operators/external-secrets-operator.yaml
 
-  #- operators/nanogw-operator.yaml
-  #- operators/apic-operator.yaml
-  #- operators/valkey-operator.yaml
+  - operators/nanogw-operator.yaml
+  - operators/apic-operator.yaml
+  - operators/valkey-operator.yaml
   - operators/envoy-operator.yaml
-  #- operators/idig-operator.yaml
+  - operators/idig-operator.yaml
 
   - operands/all-operands.yaml
  
