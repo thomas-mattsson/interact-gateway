@@ -8,5 +8,7 @@ metadata:
 spec:
   devportalAdminEndpoint:
     gatewayClassName: envoy
+    ingressClassName: null
   devportalUIEndpoint:
     gatewayClassName: envoy
+    ingressClassName: null
