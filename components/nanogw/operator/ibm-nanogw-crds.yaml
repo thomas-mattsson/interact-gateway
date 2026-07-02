@@ -11,7 +11,7 @@ spec:
     - dpn
     kind: API
     plural: apis
-    shortNames: []
+    #shortNames: []
     singular: api
   scope: Namespaced
   versions:
@@ -439,7 +439,7 @@ spec:
     - dpn
     kind: APISet
     plural: apisets
-    shortNames: []
+    #shortNames: []
     singular: apiset
   scope: Namespaced
   versions:
