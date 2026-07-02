@@ -1,0 +1,1 @@
+ServerSideApply patches to operator created CRs that need the gatewayClassName set. Not required if no ingress class exists in cluster. 
