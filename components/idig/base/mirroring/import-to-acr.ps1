@@ -1,4 +1,4 @@
-az acr import --name <acr>
+az acr import --name <acr> `
     --source mcr.microsoft.com/cbl-mariner/busybox:2.0 `
     --image utils/busybox:2.0
 
