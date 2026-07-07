@@ -9,3 +9,4 @@ spec:
   mgmtEndpoint:
     gatewayClassName: envoy
     ingressClassName: ""
+  imageRegistry: icr.io/idig
