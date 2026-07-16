@@ -19,7 +19,7 @@ spec:
   enableDevPortal: true  # Set to true to enable DevPortal
 
   # The base domain for all endpoints in the platform
-  domain: itzaks-nurmlarj.az.techzone.ibm.com
+  domain: envoy.eu-de.containers.appdomain.cloud
 
   # Optional: Custom ingress certificate for IDIG Gateway HTTPRoutes (idig-api and idig-web)
   # If not specified, cert-manager will automatically generate certificates using ingress-issuer
@@ -57,6 +57,6 @@ spec:
   # NanoGateway configuration is handled by the profile template
   # To customize NanoGateway settings, patch the NanoGatewayCluster CR after creation
   nanoGateway:
-    gatewayDomain: nanogw.itzaks-nurmlarj.az.techzone.ibm.com
+    gatewayDomain: nanogw.envoy.eu-de.containers.appdomain.cloud
     mgmtEndpoint:
       gatewayClassName: envoy
