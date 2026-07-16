@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: ./argocd
-    repoURL: https://github.com/Nordic-MVP-GitOps-Repos/interact-gateway.git
+    repoURL: https://github.com/thomas-mattsson/interact-gateway.git
   syncPolicy:
     automated:
       prune: true

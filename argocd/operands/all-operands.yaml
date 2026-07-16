@@ -28,7 +28,7 @@ spec:
     spec:
       project: default
       source:
-        path: 'envs/aks/nonprod/{{name}}/'
+        path: 'envs/iks/nonprod/{{name}}/'
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{namespace}}'
