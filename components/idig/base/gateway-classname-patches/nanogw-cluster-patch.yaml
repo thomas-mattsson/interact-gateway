@@ -9,7 +9,7 @@ spec:
   mgmtEndpoint:
     gatewayClassName: envoy
     ingressClassName: ""
-    imageRegistry: cp.icr.io/cp/apic
+  imageRegistry: cp.icr.io/cp/apic
 #  imageRegistry: icr.io/idig
 #  template:
 #    - containers:
