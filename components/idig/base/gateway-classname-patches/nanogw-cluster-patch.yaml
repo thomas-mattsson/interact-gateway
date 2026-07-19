@@ -10,26 +10,3 @@ spec:
     gatewayClassName: envoy
     ingressClassName: ""
   imageRegistry: icr.io/idig
-  template:
-    - containers:
-        - image: icr.io/idig/datapower-nano-management:1.0.0
-          name: nanogw-management
-      name: nanogw-management
-    - containers:
-        - image: icr.io/idig/datapower-nano-runtime:1.0.0
-          name: nanogw-runtime-config
-      name: nanogw-runtime-config
-    - enabled: false
-      name: nanogw-gateway-proxy
-    - containers:
-        - image: >-
-            icr.io/idig/ibm-apiconnect-nanogateway-nanogw-analytics-collector:2026-06-26-05-17-21-v12.1-saas-51d8c7d76948876ba431f4bc31571a11f3f47b15
-          name: nanogw-analytics-collector
-      enabled: true
-      name: nanogw-analytics-collector
-    - containers:
-        - image: >-
-            icr.io/idig/ibm-apiconnect-nanogateway-system-check:16-2026-06-25-16-18-57-68f77f088a991cb8c04d97365795b64aac5be304
-          name: system-check
-      enabled: true
-      name: system-check
