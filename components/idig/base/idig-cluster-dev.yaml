@@ -7,7 +7,7 @@ spec:
   imagePullSecrets:
     - ibm-entitlement-key
   imageRegistry: icr.io/idig
-  version: 12.1.1.0
+  version: 12.1.1.1
   profile: dev
   # License configuration for IBM DataPower Interact Gateway
   license:
